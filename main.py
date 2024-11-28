@@ -18,7 +18,7 @@ content = r.json()
 raw_message = ""
 
 # Access article titles and description 
-for article in content["articles"]:
+for article in content["articles"][:20]:
     raw_message = raw_message + f"""
 {article["title"]}
 {article["description"]}
