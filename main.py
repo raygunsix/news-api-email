@@ -3,8 +3,10 @@ import requests
 from send_email import send_email
 
 api_key = os.getenv("API_KEY")
-url = "https://newsapi.org/v2/top-headlines" \
-    "?country=us&category=business&" \
+url = "https://newsapi.org/v2/top-headlines?" \
+    "country=us&" \
+    "category=business&" \
+    "language=en&" \
     "apiKey=" + api_key
 
 # Make request
