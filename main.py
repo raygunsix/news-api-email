@@ -17,12 +17,10 @@ raw_message = ""
 
 # Access article titles and description 
 for article in content["articles"]:
-    title = article["title"]
-    description = article["description"]
-
     raw_message = raw_message + f"""
-{title}
-{description}
+{article["title"]}
+{article["description"]}
+{article["url"]}
 """
 
 # Build email
